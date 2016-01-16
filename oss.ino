@@ -49,13 +49,13 @@ void motor(float distance)
     if(sw >= 0)
     {
         servo.write(180); 
-        delay(30);
+        delay(100);
         sw = 180;
     }
     if(sw <= 180)
     {
         servo.write(0); 
-        delay(30);
+        delay(100);
         sw = 0;
     }
   }
@@ -69,4 +69,3 @@ void motor(float distance)
     if(distance < 3) analogWrite(motorpin1, 20);
   }
 }
-
